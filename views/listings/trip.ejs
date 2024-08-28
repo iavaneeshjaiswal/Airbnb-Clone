@@ -1,0 +1,15 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+  <div class="row">
+    <form action="/listings/plan" method="get">
+        <textarea
+          name="search"
+          placeholder="Enter the Stops with Commas eg(mumbai,delhi,uttarpradesh)"
+          rows="3"
+          wrap="hard"
+          cols="70"
+        ></textarea>
+        <input type="submit" value="Plan"/>
+    </form>
+  </div>
+</body>

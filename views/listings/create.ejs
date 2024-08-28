@@ -1,0 +1,89 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+  <h1>Create New Listing</h1>
+  <form action="/listings" method="POST">
+    <div class="row mb-4">
+      <div class="col">
+        <div data-mdb-input-init class="form-outline">
+          <input
+            type="text"
+            id="form6Example1"
+            name="title"
+            class="form-control"
+            placeholder="Enter the Title"
+            required
+          />
+          <label class="form-label" for="form6Example1">Title</label>
+        </div>
+      </div>
+      <div class="col">
+        <div data-mdb-input-init class="form-outline">
+          <input
+            type="number"
+            id="form6Example1"
+            name="price"
+            class="form-control"
+            max="100000"
+            placeholder="Enter the Price"
+            required
+          />
+          <label class="form-label" for="form6Example1">Price</label>
+        </div>
+      </div>
+    </div>
+
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input
+        type="text"
+        id="form6Example3"
+        class="form-control"
+        name="image"
+        placeholder="Give us the Image Url"
+        required
+      />
+      <label class="form-label" for="form6Example3">Image URL</label>
+    </div>
+
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input
+        type="text"
+        id="form6Example4"
+        class="form-control"
+        name="location"
+        placeholder="Enter the location"
+        required
+      />
+      <label class="form-label" for="form6Example4">Location</label>
+    </div>
+
+    <div data-mdb-input-init class="form-outline mb-4">
+      <input
+        type="text"
+        id="form6Example5"
+        class="form-control"
+        name="country"
+        placeholder="Enter country"
+        required
+      />
+      <label class="form-label" for="form6Example5">Country:</label>
+    </div>
+    <div data-mdb-input-init class="form-outline mb-4">
+      <textarea
+        class="form-control"
+        id="form6Example7"
+        rows="4"
+        name="description"
+        placeholder="Write Some Description of your Property"
+        required
+      ></textarea>
+      <label class="form-label" for="form6Example7">Description</label>
+    </div>
+    <button
+      data-mdb-ripple-init
+      type="submit"
+      class="btn btn-primary btn-block mb-4"
+    >
+      Create Listing
+    </button>
+  </form>
+</body>

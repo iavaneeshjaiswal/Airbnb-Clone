@@ -1,0 +1,20 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+     <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+  <%for(list of searched){%>
+    <a href="/listings/<%=list._id%>" class="text-decoration-none w-auto">
+  <div class="card col" style="width:20rem">
+    <img src="<%=list.image.url%>" class="card-img-top" />
+    <div class="card-img-overlay">
+      <p class="card-description"><%=list.description%></p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><%=list.title%></h5>
+      <p class="card-text">Country- <%=list.country%></p>
+      <p class="card-text">&#x20B9 <%=list.price.toLocaleString("en-IN")%>/Night</p>
+    </div>
+  </div>
+</a>  
+  <%}%>
+</div>
+</body>
